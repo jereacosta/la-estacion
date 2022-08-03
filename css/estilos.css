@@ -181,7 +181,17 @@ footer {
       "footer";
   }
   header {
-    width: 100%;
+    width: 480px;
+  }
+  #content {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    width: 480px;
+  }
+  video {
+    width: 480px;
   }
 }
 
