@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <title>Contacto</title>
   </head>
   <body>
     <div>
-      <header>LA ESTACION</header>
+      <header>
+        <header class="justify-content-center">
+          <img
+            src="Recursos/la-estacion-geader-removebg-preview.png"
+            alt="la-estacion-geader"
+          />
+          <!-- <ul class="header1">
+          <li>L</li>
+          <li>A</li>
+          <li>E</li>
+          <li>S</li>
+          <li>T</li>
+          <li>A</li>
+          <li>C</li>
+          <li>I</li>
+          <li>O</li>
+          <li>N</li>
+        </ul> -->
+        </header>
+      </header>
       <nav>
         <ul>
           <li>
@@ -21,42 +46,70 @@
           <li><a href="radio.html"> Radio </a></li>
         </ul>
       </nav>
-      <section class="formulario">
-        <form action="">
-          <fieldset>
-            <legend>Formulario para Contacto y reservas</legend>
-          </fieldset>
-          <label for="nombre"> Nombre:</label>
-          <input type="text" name="nombre" id="nombre" />
-          <label for="Telefono">Telefono:</label>
-          <input type="text" name="Telefono" id="Telefono" />
-          <div>Reserva</div>
-          <input type="radio" name="contacto" id="Reserva" />
-          <div>Contacto</div>
-          <input type="radio" name="contacto" id="Contacto" />
-          <br />
-          <label for="mensaje">Mensaje:</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-          <br />
-          <input type="submit" value="Enviar Formulario" />
-          <input type="reset" value="Limpiar Formulario" />
-        </form>
-      </section>
-      <div class="mapa">
-        <h1>Como llegar a La Estacion- outdoor</h1>
-        <iframe class="mapa1"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4818.772541329886!2d-64.46829550170803!3d-31.348305393566083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d65b72dc955ed%3A0x6630c7aa9c7cefdc!2sLa%20Estaci%C3%B3n%20Cordoba!5e0!3m2!1ses-419!2sar!4v1657597810119!5m2!1ses-419!2sar"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <h1>Como llegar a la Estacion- indoor</h1>
-        <iframe class="mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5724.804060157326!2d-64.34835395436889!3d-31.441973622914965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6164071345a7%3A0x2b70a088f6055264!2sLa%20estacion%20indoor!5e0!3m2!1ses-419!2sar!4v1657597946153!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="row">
+        <div class="col col-md-6">
+          <section class="formulario">
+            <form action="">
+              <fieldset>
+                <legend>Formulario para Contacto y reservas</legend>
+              </fieldset>
+              <label for="nombre"> Nombre:</label>
+              <input type="text" name="nombre" id="nombre" />
+              <label for="Telefono">Telefono:</label>
+              <input type="text" name="Telefono" id="Telefono" />
+              <div>Reserva</div>
+              <input type="radio" name="contacto" id="Reserva" />
+              <div>Contacto</div>
+              <input type="radio" name="contacto" id="Contacto" />
+              <br />
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <br />
+              <input type="submit" value="Enviar Formulario" />
+              <input type="reset" value="Limpiar Formulario" />
+            </form>
+          </section>
+        </div>
+        <div class="col col-md-6">
+          <div class="mapa">
+            <h1>Como llegar a La Estacion- outdoor</h1>
+            <iframe
+              class="mapa1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4818.772541329886!2d-64.46829550170803!3d-31.348305393566083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d65b72dc955ed%3A0x6630c7aa9c7cefdc!2sLa%20Estaci%C3%B3n%20Cordoba!5e0!3m2!1ses-419!2sar!4v1657597810119!5m2!1ses-419!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col col-md-6">
+          <h1 >Como llegar a la Estacion- indoor</h1>
+          <iframe
+            class="mapa2"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5724.804060157326!2d-64.34835395436889!3d-31.441973622914965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6164071345a7%3A0x2b70a088f6055264!2sLa%20estacion%20indoor!5e0!3m2!1ses-419!2sar!4v1657597946153!5m2!1ses-419!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </div>
     <footer width="10%">La Estacion &copy;2001</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

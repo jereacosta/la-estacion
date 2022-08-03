@@ -9,11 +9,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- CSS only bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <title>La Estacion</title>
   </head>
   <body>
-    <div id="container">
-      <header>
+    <div id="container  text-center">
+      <header class="justify-content-center">
         <img
           src="Recursos/la-estacion-geader-removebg-preview.png"
           alt="la-estacion-geader"
@@ -41,36 +48,43 @@
           <li><a href="media.html"> Media </a></li>
           <li><a href="contacto.html"> Contacto </a></li>
           <li><a href="radio.html"> Radio </a></li>
-          
         </ul>
       </nav>
 
       <section id="content">
-        <div class="articulo1">
+        <div class="row col-12 col-md-12">
           <article class="article">
             <video src="Recursos/Proximafecha.mp4" autoplay muted></video>
-            <h1 class="animate__animated animate__pulse">
+            <h1 class="animate__animated animate__pulse col 12 col-md 6">
               | VIERNES 22 DE JULIO|<br />
               Stephan Jolk & Øostil <br />
               ZAC ZAC - Moji Manhattan
             </h1>
             <input class="button" type="button" value="COMPRAR TICKETS" />
           </article>
+          <div class="row col-12 col-md-12">
+            <article class="articleBlanco">
+              <img src="recursos/Sorteo.jpg" alt="sorteo 100 entradas" />
+              <h1>
+                Llegamos a 100k de seguidores en instagram y sorteamos 100
+                tickets
+              </h1>
+              <p>Para participar anotate en nuestro canal de telegram</p>
+            </article>
+          </div>
         </div>
-        <article class="articleBlanco">
-          <img src="recursos/Sorteo.jpg" alt="sorteo 100 entradas" />
-          <h1>
-            Llegamos a 100k de seguidores en instagram y sorteamos 100 tickets
-          </h1>
-          <p>Para participar anotate en nuestro canal de telegram</p>
-        </article>
       </section>
       <!-- <aside class="publicidad">
 
 
       </aside> -->
-
-      <footer>La Estacion 20 años &copy;2001</footer>
     </div>
+    <footer>La Estacion 20 años &copy;2001</footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
