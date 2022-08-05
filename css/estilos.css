@@ -187,13 +187,11 @@ footer {
   transition: transform 0.2s;
 }
 .display-5 {
-  color: antiquewhite;
   transition: transform 0.2s;
 }
 .display-5:hover {
   transform: scale(1.1);
   text-decoration: none;
-  color: antiquewhite;
 }
 
 .yotto {
