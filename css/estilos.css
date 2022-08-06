@@ -93,7 +93,7 @@ nav ul input {
 }
 .articleBlanco {
   color: white;
-  border: solid 1px white;
+
   width: 100%;
   min-height: 100vh;
 }
@@ -102,14 +102,16 @@ nav ul input {
   text-align: center;
   font-size: 30px;
   float: right;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .articleBlanco p {
   width: 50%;
   text-align: center;
   font-size: 25px;
   float: right;
-  margin: 20px;
+  margin-top: 30px;
+  gap: 20px;
+  justify-content: right;
 }
 .articleBlanco img {
   width: 370px;
@@ -160,20 +162,26 @@ footer {
   height: 420px;
 }
 
-#videos h1 {
+.section-after h1 {
   width: 100%;
-  font-size: 20px;
+  height: 50px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 2em;
 }
 .imagenradio {
   width: 300px;
   height: 400px;
+  margin: 20px;
 }
 .cartelnoticias {
   width: 100%;
-  height: 50%;
+  height: 50px;
   background-color: black;
   color: whitesmoke;
   text-align: center;
+  letter-spacing: 2em;
 }
 .articulos-noticias1 {
   width: 100%;
@@ -197,16 +205,21 @@ footer {
 }
 
 .yotto {
-  width: 40%;
+  width: 100%;
   font-size: 12px;
   text-align: justify;
   color: rgb(74, 74, 74);
+  height: 550px;
+  margin-top: 45px;
 }
 .img-fluid {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   padding: 15px;
+}
+#carouselExampleCaptions {
+  width: 90%;
 }
 /*diseño movil*/
 @media screen and (max-width: 480px) {
