@@ -11,6 +11,7 @@ body {
   max-height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  overflow-x: 0;
 }
 #container {
   width: 100%;

@@ -1,0 +1,27 @@
+body {
+  width: 100%;
+  background-color: black;
+  overflow-x: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  max-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  overflow-x: 0;
+}
+
+header {
+  color: white;
+  background-image: url(https://cordobabeat.com/wp-content/uploads/2019/02/Green-Velvet-La-Estaci%C3%B3n-5-1024x682.jpeg);
+  background-position: 100px 10px;
+  background-size: cover;
+}
+
+.inicio div {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.facebook.com/laestacioncordoba/photos/5163408260424540);
+}
+
+/*# sourceMappingURL=style.css.map */
