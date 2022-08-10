@@ -23,6 +23,11 @@ header {
   background-position: 100px 10px;
   background-size: cover;
 }
+.inicio div {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cordobabeat.com/wp-content/uploads/2021/02/cover-3.jpg);
+}
 header img {
   justify-content: center;
   width: 480px;
@@ -224,7 +229,7 @@ footer {
 }
 /*diseño movil*/
 @media screen and (max-width: 480px) {
-  .container {
+  #container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);

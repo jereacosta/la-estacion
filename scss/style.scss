@@ -1,7 +1,13 @@
 body {
   width: 100%;
 
-  background-color: black;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 8%,
+    rgba(9, 15, 125, 1) 32%,
+    rgba(4, 131, 202, 1) 62%,
+    rgba(3, 154, 251, 1) 100%
+  );
   overflow-x: 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -9,17 +15,206 @@ body {
   max-height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  overflow-x: 0;
 }
 header {
   color: white;
   background-image: url(https://cordobabeat.com/wp-content/uploads/2019/02/Green-Velvet-La-Estaci%C3%B3n-5-1024x682.jpeg);
-  background-position: 100px 10px;
-  background-size: cover;
+  background-position: cover;
+
+  img {
+    justify-content: center;
+    width: 480px;
+    animation: shake 2s infinite;
+    animation-direction: alternate;
+  }
 }
-.inicio {
-  div {
+@keyframes shake {
+  0% {
+    transform: skewY(2deg);
+  }
+  100% {
+    transform: skewY(-2deg);
+  }
+}
+nav {
+  width: 100%;
+  background: black;
+  height: 50px;
+  ul {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    li {
+      list-style: none;
+      margin: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      -webkit-transition: 1s linear;
+      transition: 1s linear;
+      margin-left: 20px;
+    }
+  }
+}
+nav ul li:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #fondo {
     width: 100%;
     height: 100vh;
+    background-image: url(https://cordobabeat.com/wp-content/uploads/2021/02/cover-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    h1 {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 60px;
+      color: rgb(0, 0, 0);
+      text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(255, 255, 255, 0.5),
+        4px 4px 5px rgba(255, 255, 255, 0.5),
+        0px 0px 7px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+.content {
+  width: 100%;
+  height: 100vh;
+}
+.article1 {
+  width: 100%;
+  min-height: 500px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    width: 400px;
+    text-align: center;
+    float: left;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+  video {
+    width: 370px;
+    height: 520px;
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+.articleBlanco {
+  color: white;
+
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    float: right;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+  p {
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+    float: right;
+    margin-top: 30px;
+  }
+  img {
+    width: 370px;
+    height: 520px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+/*diseño movil*/
+@media screen and (max-width: 480px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+    gap: 10px;
+    grid-template-areas:
+      "header  "
+      "nav"
+      "section"
+      "section"
+      "footer";
+  }
+  header {
+    width: 480px;
+  }
+  header img {
+    width: 480px;
+  }
+  nav {
+    width: 100%;
+  }
+  #content {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    width: 480px;
+  }
+  video {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    width: 100%;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+    gap: 10px;
+    grid-template-areas:
+      "header header header "
+      "nav nav nav"
+      "section section section "
+      "section section section "
+      "footer footer footer ";
+  }
+}
+@media screen and (min-width: 1100px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    margin: 0 auto;
+    gap: 10px;
+    grid-template-areas:
+      "header header header "
+      "nav nav nav"
+      "section section section "
+      "section section section "
+      "footer footer footer ";
   }
 }
