@@ -1,3 +1,8 @@
+/* Variables */
+$font-title: normal 30px/1.5 "Poppins", sans-serif;
+$font: "Poppins", sans-serif;
+/* Import */
+@import "entradas";
 body {
   width: 100%;
 
@@ -53,13 +58,14 @@ nav {
       -webkit-transition: 1s linear;
       transition: 1s linear;
       margin-left: 20px;
+      &:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
     }
   }
 }
-nav ul li:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -98,8 +104,7 @@ nav ul li:hover {
     width: 400px;
     text-align: center;
     float: left;
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
+    font: $font-title;
   }
   video {
     width: 370px;
@@ -122,8 +127,7 @@ nav ul li:hover {
     float: right;
     width: 100%;
     text-align: center;
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
+    font: $font-title;
   }
   p {
     width: 100%;
