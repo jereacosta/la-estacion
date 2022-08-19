@@ -1,0 +1,22 @@
+.section-after h1 {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 2em;
+}
+.VideosAfter {
+  p {
+    justify-content: center;
+    text-align: center;
+    font-family: $font;
+    font-style: bold;
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: black;
+  }
+}
+ .aftermovies{
+    padding: 20px;
+ }
