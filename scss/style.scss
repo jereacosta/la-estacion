@@ -5,7 +5,7 @@ $font: "Poppins", sans-serif;
 /* @import "entradas"; */
 @import "noticias";
 @import "media";
-
+@import "mixin";
 /* Maps */
 body {
   width: 100%;
@@ -21,14 +21,14 @@ body {
   text-align: center;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 header {
-  color: map;
-  background-image: url(https://cordobabeat.com/wp-content/uploads/2019/02/Green-Velvet-La-Estaci%C3%B3n-5-1024x682.jpeg);
-  background-position: cover;
+  background-image: url(../Recursos/backgroundheader.jpg);
+  background-position: 100px 10px;
+  background-size: cover;
 
   img {
     justify-content: center;
@@ -50,9 +50,7 @@ nav {
   background: black;
   height: 50px;
   ul {
-    display: flex;
-
-    justify-content: center;
+    @include flex-center;
     align-items: center;
     li {
       list-style: none;
@@ -71,8 +69,7 @@ nav {
 }
 
 .flex-center {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   align-items: center;
   #fondo {
     width: 100%;
@@ -101,9 +98,9 @@ nav {
   width: 100%;
   min-height: 500px;
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   align-items: center;
+  border-bottom: 1px solid black;
   h1 {
     width: 400px;
     text-align: center;
@@ -160,13 +157,12 @@ nav {
 }
 
 #entradas {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 .articleentrada {
-  display: flex;
+  @include flex-center;
   flex: 0 1 300px;
   flex-direction: column;
   border: 1px solid black;
@@ -181,7 +177,6 @@ nav {
   }
 }
 
-
 footer {
   background: black;
   color: white;
@@ -190,26 +185,27 @@ footer {
   line-height: 50px;
 }
 .redes {
-  list-style: none; 
- li {
+  list-style: none;
+  li {
     padding: 0 0.4rem;
-    list-style: none; }
-   i {
+    list-style: none;
+  }
+  i {
     color: #12c8dd;
-    font-size: 1.4rem; 
-  &:hover {
-      color: white; }
+    font-size: 1.4rem;
+    &:hover {
+      color: white;
+    }
   }
 }
 
-
-/*diseño movil*/
+/* /*diseño movil*/
 @media screen and (max-width: 480px) {
   #container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    margin: 0 auto;
+    margin: 0;
     gap: 10px;
     grid-template-areas:
       "header  "
