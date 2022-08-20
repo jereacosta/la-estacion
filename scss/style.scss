@@ -7,37 +7,6 @@ $font: "Poppins", sans-serif;
 @import "media";
 
 /* Maps */
-#entradas {
-  margin-top: 20px;
-  width: 100%;
-  min-height: 100vh;
-}
-* {
-  box-sizing: border-box;
-}
-
-#entradas {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.articleentrada {
-  display: flex;
-  flex: 0 1 300px;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 1rem;
-  padding: 2rem;
-
-  img {
-    order: -1;
-    align-self: center;
-    width: 300px;
-    height: 420px;
-  }
-}
-
 body {
   width: 100%;
 
@@ -181,12 +150,56 @@ nav {
     margin-top: 20px;
   }
 }
+#entradas {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+
+#entradas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.articleentrada {
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  img {
+    order: -1;
+    align-self: center;
+    width: 300px;
+    height: 420px;
+  }
+}
+
+
 footer {
   background: black;
   color: white;
   text-align: center;
   height: 50px;
   line-height: 50px;
+}
+.redes {
+  list-style: none; 
+ li {
+    padding: 0 0.4rem;
+    list-style: none; }
+   i {
+    color: #12c8dd;
+    font-size: 1.4rem; 
+  &:hover {
+      color: white; }
+  }
 }
 
 

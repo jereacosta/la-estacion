@@ -2,17 +2,6 @@
 /* Variables */
 /* Import */
 /* @import "entradas"; */
-.redes {
-  list-style: none; }
-  .redes li {
-    padding: 0 0.4rem;
-    list-style: none; }
-  .redes i {
-    color: #12c8dd;
-    font-size: 1.4rem; }
-    .redes i:hover {
-      color: white; }
-      
 .imagenradio {
   width: 300px;
   height: 400px;
@@ -81,38 +70,6 @@
 }
 
 /* Maps */
-#entradas {
-  margin-top: 20px;
-  width: 100%;
-  min-height: 100vh;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#entradas {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.articleentrada {
-  display: flex;
-  flex: 0 1 300px;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 1rem;
-  padding: 2rem;
-}
-.articleentrada img {
-  order: -1;
-  align-self: center;
-  width: 300px;
-  height: 420px;
-}
-
 body {
   width: 100%;
   background: linear-gradient(0deg, rgb(0, 0, 0) 8%, rgb(9, 15, 125) 32%, rgb(4, 131, 202) 62%, rgb(3, 154, 251) 100%);
@@ -249,12 +206,59 @@ nav ul li:hover {
   margin-top: 20px;
 }
 
+#entradas {
+  margin-top: 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#entradas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.articleentrada {
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.articleentrada img {
+  order: -1;
+  align-self: center;
+  width: 300px;
+  height: 420px;
+}
+
 footer {
   background: black;
   color: white;
   text-align: center;
   height: 50px;
   line-height: 50px;
+}
+
+.redes {
+  list-style: none;
+}
+.redes li {
+  padding: 0 0.4rem;
+  list-style: none;
+}
+.redes i {
+  color: #12c8dd;
+  font-size: 1.4rem;
+}
+.redes i:hover {
+  color: white;
 }
 
 /*diseño movil*/
