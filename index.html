@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/final.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -16,21 +16,23 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <!-- FontAwesome -->  
-    <script src="https://kit.fontawesome.com/7d4193cf05.js" crossorigin="anonymous"></script> 
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/7d4193cf05.js"
+      crossorigin="anonymous"
+    ></script>
     <title>La Estacion</title>
   </head>
   <body>
-    <div id="container  text-center">
-      <header class="justify-content-center">
+    <div id="container  " class="row">
+      <header class="col-12">
         <img
-          class="mx-auto d-block"
           src="Recursos/la-estacion-geader-removebg-preview.png"
           alt="la-estacion-geader"
         />
       </header>
 
-      <nav>
+      <nav class="col-12">
         <ul>
           <li>
             <a href="index.html"> Inicio </a>
@@ -41,27 +43,21 @@
           <li><a href="paginas/radio.html"> Radio </a></li>
         </ul>
       </nav>
-      
-      <section  id=" content">
-        <div class="row">
-        <div class="col-12 col-md-12 flex-center">
-          <div id="fondo" class=" flex-center">
-            <h1
-              class="animate__animated animate__pulse animate__infinite animate__slow"
-            >
-              #NOVIEMBRE
-              <br />
-              VOLVEMOS AL OUTDOOR
-              <br />
-              Volvemos más grandes, más TECHNO… MAS XL 💙
-            </h1>
-          </div>
+
+      <section id=" content">
+        <div class=" full-screen-video-container">
+          <video src="Recursos/fondo.mp4" autoplay loop muted></video>
         </div>
-        <div class=" col-12 col-md-12">
-          <article class="article1">
-            <video class="col-12 col-md-6" src="recursos/Proximafecha.mp4" autoplay muted></video>
+        
+          <article class="article1 row ">
+            <video
+              class=" col col-lg-6 "
+              src="recursos/Proximafecha.mp4"
+              autoplay
+              muted
+            ></video>
             <h1
-              class="animate__animated animate__pulse animate__infinite col-12 col-md-6"
+              class="col col-lg-6 animate__animated animate__pulse animate__infinite"
             >
               | VIERNES 22 DE JULIO|<br />
               Stephan Jolk & Øostil <br />
@@ -69,65 +65,64 @@
               <input class="button" type="button" value="COMPRAR TICKETS" />
             </h1>
           </article>
-        </div>
-          <div class="col-12 col-md-12">
-          
 
-            <article class="row articleBlanco">
-              <div class="col-12 col-md-6">
-              <img src="recursos/Sorteo.jpg" alt="sorteo 100 entradas" />
-              </div>
-              <div class="col-12 col-md-6">
-              <h1>Llegamos a 100k de seguidores en instagram</h1>
-              <p>
-                sorteamos 100 tickets para participar
-                
-                anotate en nuestro canal de telegram
-              </p>
-            </div>
-            </article>
-          </div>
-          
-        </div>
+          <article class="row articleBlanco">
+            <img class="col col-md-6" src="recursos/Sorteo.jpg" alt="sorteo 100 entradas" />
+
+            <h1 class="col col-md-12">Llegamos a 100k de seguidores en instagram</h1>
+            <p class="col col-md-6">
+              sorteamos 100 tickets para participar anotate en nuestro canal de
+              telegram y segui las intrucciones ademas enterate de todas nuestras novedades.
+              <a href=""></a>
+            </p>
+          </article>
+        
       </section>
     </div>
-    </div>
+
     <footer>
-      <div class="row">
-  
-      <div class="col col-lg-6 justify-content-center">
-        La Estacion 20 años &copy;2001
-      </div> 
-      <div class="col col-lg-6 justify-content-center">
-      <ul class="d-flex pt-2 redes pl-2 justify-content-center mt-3">
-        <li>
-            <a href="https://es-la.facebook.com/laestacioncordoba/" target="_blank">
-                <i class="fab fa-facebook-square"></i>
+      <div class="copy">La Estacion 20 años &copy;2001</div>
+      <div class="redes">
+        <ul class="d-flex pt-2 redes pl-2 justify-content-center mt-3">
+          <li>
+            <a
+              href="https://es-la.facebook.com/laestacioncordoba/"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"></i>
             </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/laestacioncordoba/?hl=es" target="_blank">
-                <i class="fab fa-instagram"></i>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/laestacioncordoba/?hl=es"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
             </a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="https://twitter.com/CordobaEstacion" target="_blank">
-                <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter"></i>
             </a>
-        </li>
-        <li>
-            <a href="https://open.spotify.com/playlist/6ZoXXG2kcWrzvS7NUZ4rMK?si=QfrCakS0RHyqW8Pif-dmbw&nd=1" target="_blank">
-                <i class="fab fa-spotify"></i>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/playlist/6ZoXXG2kcWrzvS7NUZ4rMK?si=QfrCakS0RHyqW8Pif-dmbw&nd=1"
+              target="_blank"
+            >
+              <i class="fab fa-spotify"></i>
             </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/c/LaEstacionCordoba" target="_blank">
-                <i class="fab fa-youtube"></i>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/c/LaEstacionCordoba"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
             </a>
-        </li>
-    </ul>
-  </div>
-  </div>
+          </li>
+        </ul>
+      </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script

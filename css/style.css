@@ -1,7 +1,37 @@
-@charset "UTF-8";
 /* Variables */
 /* Import */
-/* @import "entradas"; */
+/* Variables */
+#entradas {
+  margin-top: 20px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#entradas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.articleentrada {
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.articleentrada img {
+  order: -1;
+  align-self: center;
+  width: 300px;
+  height: 420px;
+}
+
 .imagenradio {
   width: 300px;
   height: 400px;
@@ -9,12 +39,15 @@
 }
 
 .cartelnoticias {
-  width: 100%;
+  width: 90%;
   height: 50px;
   background-color: black;
   color: whitesmoke;
   text-align: center;
   letter-spacing: 2em;
+}
+.cartelnoticias h1 {
+  width: 80%;
 }
 
 .articulos-noticias1 {
@@ -46,12 +79,21 @@
   margin-top: 45px;
 }
 
+.carrusel {
+  width: 90%;
+  padding: 10px;
+}
+
+.section-after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .section-after h1 {
-  width: 100%;
+  width: 80%;
   height: 50px;
   background-color: black;
   color: whitesmoke;
-  text-align: center;
   letter-spacing: 2em;
 }
 
@@ -70,22 +112,24 @@
 }
 
 /* Maps */
+/* maps */
 body {
-  width: 100%;
   background: linear-gradient(0deg, rgb(0, 0, 0) 8%, rgb(9, 15, 125) 32%, rgb(4, 131, 202) 62%, rgb(3, 154, 251) 100%);
-  overflow-x: 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
   display: grid;
+  grid-template-areas: "header" "nav" "section" "footer";
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 header {
-  background-image: url(../Recursos/backgroundheader.jpg);
-  background-position: 100px 10px;
-  background-size: cover;
+  grid-area: header;
+  background-color: #12c8dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header img {
   justify-content: center;
@@ -103,6 +147,7 @@ header img {
   }
 }
 nav {
+  grid-area: nav;
   width: 100%;
   background: black;
   height: 50px;
@@ -110,7 +155,6 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
 }
 nav ul li {
@@ -127,40 +171,42 @@ nav ul li:hover {
   transform: scale(1.2);
 }
 
-.flex-center {
+#content {
+  grid-area: section;
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
 }
-.flex-center #fondo {
-  width: 100%;
+
+.full-screen-video-container {
+  position: relative;
   height: 100vh;
-  background-image: url(https://cordobabeat.com/wp-content/uploads/2021/02/cover-3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.flex-center #fondo h1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 60px;
-  color: rgb(0, 0, 0);
-  text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(255, 255, 255, 0.5), 4px 4px 5px rgba(255, 255, 255, 0.5), 0px 0px 7px rgba(255, 255, 255, 0.5);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.content {
-  width: 100%;
-  height: 100vh;
+.full-screen-video-container video {
+  z-index: -1;
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 1100px;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .article1 {
   width: 100%;
-  min-height: 500px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
   border-bottom: 1px solid black;
 }
@@ -220,37 +266,15 @@ nav ul li:hover {
   box-sizing: border-box;
 }
 
-#entradas {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.articleentrada {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex: 0 1 300px;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 1rem;
-  padding: 2rem;
-}
-.articleentrada img {
-  order: -1;
-  align-self: center;
-  width: 300px;
-  height: 420px;
-}
-
 footer {
+  grid-area: footer;
   background: black;
   color: white;
+  max-height: 100px;
   text-align: center;
-  height: 50px;
-  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .redes {
@@ -266,60 +290,6 @@ footer {
 }
 .redes i:hover {
   color: white;
-}
-
-/* /*diseño movil*/
-@media screen and (max-width: 480px) {
-  #container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    margin: 0;
-    gap: 10px;
-    grid-template-areas: "header  " "nav" "section" "section" "footer";
-  }
-  header {
-    width: 480px;
-  }
-  header img {
-    width: 480px;
-  }
-  nav {
-    width: 100%;
-  }
-  #content {
-    display: flex;
-    justify-content: center;
-  }
-  h1 {
-    width: 480px;
-  }
-  video {
-    width: 480px;
-  }
-}
-@media screen and (max-width: 720px) {
-  nav {
-    width: 100%;
-  }
-  #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    margin: 0 auto;
-    gap: 10px;
-    grid-template-areas: "header header header " "nav nav nav" "section section section " "section section section " "footer footer footer ";
-  }
-}
-@media screen and (min-width: 1100px) {
-  #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    margin: 0 auto;
-    gap: 10px;
-    grid-template-areas: "header header header " "nav nav nav" "section section section " "section section section " "footer footer footer ";
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

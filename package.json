@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
-    
   },
   "repository": {
     "type": "git",

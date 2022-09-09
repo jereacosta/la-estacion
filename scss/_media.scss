@@ -1,10 +1,20 @@
-.section-after h1 {
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  color: whitesmoke;
-  text-align: center;
-  letter-spacing: 2em;
+.carrusel {
+  width: 90%;
+  padding: 10px;
+}
+.section-after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    width: 80%;
+
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+
+    letter-spacing: 2em;
+  }
 }
 .VideosAfter {
   p {
@@ -17,6 +27,6 @@
     background-color: black;
   }
 }
- .aftermovies{
-    padding: 20px;
- }
+.aftermovies {
+  padding: 20px;
+}
